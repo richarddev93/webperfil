@@ -1,0 +1,59 @@
+
+
+.container-about  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1080px;
+    padding: 0 30px;
+    background-image: url('../../assets/bgabout.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    min-height: 809px;
+    justify-content: center;
+}
+.container-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.container-about .descriptionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-about .descriptionContainer .description{
+    width: 100%;
+    max-width: 1080px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+.container-perfil .textDiv{
+    text-align: end;
+}
+
+.container-perfil .imgContainer{
+    margin-right: 100px;
+}
+
+.container-perfil .textDiv .title{
+    font-size: 64px;
+    color: #FCF8F8
+}
+
+.container-perfil .textDiv .subtitle{
+    font-size: 36px;
+    color: #AAAAAA
+}
+
+
+

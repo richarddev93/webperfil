@@ -1,0 +1,14 @@
+.container-experience {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 30px;
+    flex-direction: column;
+    
+}
+.container-title h2 {
+margin-left: 150px;
+    padding-left: 30px;
+    color: #f8f8f8;
+}
+
