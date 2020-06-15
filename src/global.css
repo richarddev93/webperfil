@@ -15,7 +15,7 @@ body {
     
 }
 
-input,button,textarea {
+input,button,textarea,option {
     font: 400 18px Flamenco,sans-serif;
 }
 
@@ -24,14 +24,15 @@ button {
 }
 form input {
     max-width: 100%;
-    height: 35px;
+    height: 40px;
     background-color: #282A36;
     border-color: #44475A;
     border :1 ;
     border-style: solid solid solid solid;
-    padding: 3px;
+    padding: 10px;
     color: #f8f8f8;
     margin-bottom: 10px;
+    border-radius: 4px;
 
 }
 .button {
@@ -50,6 +51,7 @@ form input {
     font-size: 18px;
     line-height: 30px;
     transition: filter 0.2s;
+    margin-left: 5px;
 
 }
 .button:hover {
@@ -57,26 +59,41 @@ form input {
 }
 form select {
     max-width: 100%;
-    height: 35px;
+    height: 40px;
     background-color: #282A36;
-    border-color: #44475A;
-    border :1 ;
-    border-style: solid solid solid solid;
-    padding: 3px;
+    border :2px solid  #44475A;
+    padding: 5px;
     color: #f8f8f8;
     margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
 
 }
 form textarea {
-    width: 100%;
-    height: 100%;
-    background: #282A36;
-    border-color: #44475A;
-    padding: 3px;
+    max-width: 100%;
+    min-height: 200px;
+    resize:vertical ;
+    background-color: #282A36;
+    border :2px solid  #44475A;
+    padding: 16px ;
     color: #f8f8f8;
     margin-bottom: 10px;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
+    border-radius: 4px;
+    flex: 1;
+    line-height: 24px;
+    
+}
+form select option {
+    padding: 3px;
+}
+form select:hover{
+    border-color:#50FA7B ;
+}
+form input:hover {
+    border-color:#50FA7B ;
+}
+form textarea:hover {
+    border-color:#50FA7B ;
+
 }

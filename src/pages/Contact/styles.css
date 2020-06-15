@@ -27,12 +27,37 @@
 }
 .container-input-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex: 1;
     flex-direction: column;
+    margin-right: 10px;
+}
+.container-input-group section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+.container-input-group section span {
+    color: bisque;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    font-size: 18px;
 }
 .form-control {
     flex: 1;
-    margin-left: 10px;
+}
+
+.section-textarea {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-textarea span {
+    color: bisque;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    font-size: 18px;
 }
 
