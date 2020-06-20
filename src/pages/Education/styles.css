@@ -1,0 +1,48 @@
+.container-education  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 30px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.container-education h1 {
+    color: #f8f8f8;
+}
+.container-detail-education {
+        width: 100%;
+        max-width: 1020px;
+        display: flex;
+        flex-direction: column;
+    
+}
+.container-detail-education section {
+    display: flex;
+    color: rgb(150, 147, 133);
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+
+.container-detail-education section h2 {
+   color: #50FA7B;
+   
+
+}
+.container-detail-education section h4 {
+    color: #f8f8f8;
+    margin-left: 15px;
+    
+ 
+ }
+.title-group {
+    display: flex;
+    align-items: center;
+}
+.title-group p{
+ color: #f8f8f8;
+ font-size: 20px;
+ margin-left: 10px;
+}

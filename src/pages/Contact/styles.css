@@ -8,6 +8,31 @@
     align-items: center;
     margin: 0 auto;
 }
+.container-contact section{
+    width: 100%;
+    max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+.container-contact section span {
+    display: flex;
+}
+.container-contact section span h4{
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.container-contact section span p{
+    color: #ffb86c;
+    font-size: 25px;
+    margin-left: 5px;
+}
+.container-contact section span p:hover{
+    color: #50FA7B;
+}
+
 .form {
     width: 100%;
     max-width: 1020px;
@@ -16,7 +41,7 @@
 }
 
 .container-contact h1 {
-    color: aliceblue;
+    color:#f8f8f8;
 } 
 .container-input {
     display: flex;
@@ -60,4 +85,15 @@
     margin-left: 2px;
     font-size: 18px;
 }
+.container-contact-social-media {
+    display: flex;
+    flex-direction: row;
+}
+.container-contact-data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: ;
+}
+
 

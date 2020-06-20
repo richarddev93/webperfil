@@ -1,5 +1,9 @@
 import React, {useState} from 'react'
 import Avatar from '../../assets/download.jpg'
+import { GrFacebook,GrLinkedin,GrGithub,GrInstagram } from "react-icons/gr";
+import { FaWhatsappSquare } from "react-icons/fa";
+
+
 import './styles.css'
 
 
@@ -51,7 +55,22 @@ export default function Index({title,id}) {
   
     return (
     <div className="container-contact" id ={id}>
-            <h1>Me mande uma mensagem.</h1>
+            <h1>Fale Comigo.</h1>
+
+        <section >
+          <span>
+            <h4>Telefone :</h4> <p> 11 98174-3885</p>
+          </span>
+          <span>
+            <h4>E-mail   :</h4> <p> richardmachado.93@gmail.com </p>
+          </span>
+
+          <div className="container-contact-social-media">
+            <a href="https://www.linkedin.com/in/richard-machado-dev/" alt="Linkedin"><GrLinkedin color= {'#50FA7B'} size={45}/></a>
+            <a href="https://github.com/richarddev93"><GrGithub  color={'#50FA7B'}size={45}/></a>
+          </div>
+        </section>
+
         <div className = "form">
             <form onSubmit={handleMessage}> 
                 <div className="container-input">

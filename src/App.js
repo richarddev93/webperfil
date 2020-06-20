@@ -6,6 +6,7 @@ import Experience from './pages/Experience'
 import Education from './pages/Education'
 import Services from './pages/Services_'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Education id ="education"/>
       <Services id = "services"/>
       <Contact id = "contact"/>
+      <Footer />
+      
 
     </div>
     

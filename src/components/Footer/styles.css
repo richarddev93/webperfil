@@ -1,0 +1,26 @@
+.footer-container {
+    background-color:#f8f8f8;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+   justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.99);
+    margin-top: 30px;
+  }
+  
+
+  .footer-content {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('../../assets/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
