@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {  animateScroll as scroll } from "react-scroll";
 import './styles.css'
 import footerbg from '../../assets/footer.png'
 export default class index extends Component {

@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-import Avatar from '../../assets/download.jpg'
-import { GrFacebook,GrLinkedin,GrGithub,GrInstagram } from "react-icons/gr";
-import { FaWhatsappSquare } from "react-icons/fa";
-
+import { GrLinkedin,GrGithub } from "react-icons/gr";
+import api from '../../services/api'
 
 import './styles.css'
 
@@ -11,7 +9,7 @@ import './styles.css'
 
 export default function Index({title,id}) {
 
-  function handleMessage (e){
+  async function handleMessage (e){
     e.preventDefault();
     alert("Mensagem Enviada")
 
@@ -19,9 +17,26 @@ export default function Index({title,id}) {
     email,
     subject,
     message};
-   
-    
 
+    try {
+      const response = await api.post('api2/send',data);
+
+      if(response.data.send === "success"){
+        alert("Mensagem enviada com sucesso !");
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+
+      }else {
+        alert("Erro ao enviar a mensagem,tente novamente !");
+        console.log(response);
+      }
+      
+    } catch (error) {
+      alert("Erro ao enviar a mensagem,tente novamente !");
+      console.log(error);
+    }
   }
   const [name,setName]= useState('')
   const [email,setEmail]= useState('')
@@ -66,7 +81,7 @@ export default function Index({title,id}) {
           </span>
 
           <div className="container-contact-social-media">
-            <a href="https://www.linkedin.com/in/richard-machado-dev/" alt="Linkedin"><GrLinkedin color= {'#50FA7B'} size={45}/></a>
+            <a href="https://www.linkedin.com/in/richard-machado-dev/" style={{marginRight :"10px"}}alt="Linkedin"><GrLinkedin color= {'#50FA7B'} size={45}/></a>
             <a href="https://github.com/richarddev93"><GrGithub  color={'#50FA7B'}size={45}/></a>
           </div>
         </section>

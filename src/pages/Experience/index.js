@@ -2,35 +2,38 @@ import React from 'react'
 import './styles.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FcMindMap } from 'react-icons/fc';
+import { FcMultipleDevices,FcDiploma1 } from 'react-icons/fc';
 
 export default function index({id}) {
     return (
         <div className ="container-experience" id={id}>
-            <div className="container-title">
-                <h2>Experiências</h2>
-            </div>
+            {/* <div className="container-title"> */}
+                <h1>Experiências</h1>
+            {/* </div> */}
             <div className="container-timeline">
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#f8f8f8', color: 'blue' }}
-                    contentArrowStyle={{ borderRight: '6px solid  green' }}
+                    contenttyle={ { background: '#f8f8f8', color: '#44475a', borderTop: ' 3px solid #50FA7B' }}
+                    contentArrowStyle={{ borderRight: '5px solid  #50FA7B' }}
                     date="2019 - Atual"
-                    iconStyle={{ background: 'red', color: '#fff' }}
-                    icon={<FcMindMap />}
+                    iconStyle={{ background: '#282a36', color: '#50FA7B' }}
+                    icon={<FcMultipleDevices />}
                 >
                     <h3 className="vertical-timeline-element-title">Programador</h3>
                     <h4 className="vertical-timeline-element-subtitle">Desis Sistemas</h4>
                     <p>
-                        Responsável pela manutenção e e desenvolvimento de novas features para um ERP, e aplicativos mobile
+                        Responsável pela correção de bugs reportados pelos clientes e implementação de novas funções dentro do Sistema ERP;
+                        Manutenção nos aplicativos em React Native.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#f8f8f8', color: '#44475a',borderTop: ' 3px solid #50FA7B' }}
+                    contentArrowStyle={{ borderRight: '5px solid  #50FA7B' }}
                     date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<FcMindMap />}
+                    iconStyle={{ background: '#282a36', color: '#50FA7B' }}
+                    icon={<FcMultipleDevices />}
                 >
                     <h3 className="vertical-timeline-element-title">Analista de Ecommerce Jr </h3>
                     <h4 className="vertical-timeline-element-subtitle">ejacaré.com.br</h4>
@@ -40,8 +43,8 @@ export default function index({id}) {
                 </VerticalTimelineElement>
                
             <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<FcMindMap />}
+                iconStyle={{ background: '#282a36', color: '#50FA7B' }}
+                icon={<FcDiploma1 />}
             />
             </VerticalTimeline>
             </div>

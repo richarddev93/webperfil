@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import Avatar from '../../assets/download.jpg'
+import Avatar from '../../assets/perfil.jpg'
 
 export default function index({title,id}) {
     return (
@@ -11,15 +11,16 @@ export default function index({title,id}) {
                     <p className = "subtitle">Desenvolvedor FullStack</p>
                     <p className = "subtitle">27 anos</p>
                 </div>
-                    <div className="imgContainer">    
-                        <img className = "rounded" src = {Avatar} alt = ""/>
-                    </div>
+                <div className="imgContainer">    
+                    <img className = "rounded" src = {Avatar} alt = "" height="200px"/>
+                </div>
             </div>
             
             <div className="descriptionContainer">
-                <p className = "description">           
-                Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Manduma pindureta quium dia nois paga. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Casamentiss faiz malandris se pirulitá. In elementis mé pra quem é amistosis quis leo. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+                <p className = "description">  
+                Atualmente sou responsável pela manutenção e implementação de novas funções para um sistema ERP usando a Linguagem Clipper e também para alguns aplicativos com JavaScript e React Native. Concluí há um ano o curso de Sistemas de Informação e ainda busco na prática o meu desenvolvimento profissional na área de
+TI. Antes disso fui responsável por uma loja virtual porém o foco era na parte comercial mas ainda sim, com o conhecimento de tecnologia, consegui contribuir para a melhoria de alguns dos processos da loja, agregando algumas ferramentas a rotina.
+Fiz um curso Técnico em Informática na ETEC Heliópolis em 2013. Estou cursando inglês para aprimorar fala ,leitura e escrita mas consigo me desenvolver bem com o inglês técnico.         
                 </p> 
             </div>
     </div>
