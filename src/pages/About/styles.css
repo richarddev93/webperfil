@@ -2,62 +2,40 @@
 
 .container-about  {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 1080px;
-    padding: 0 30px;
     background-image: url('../../assets/bgabout.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-height: 809px;
+    min-height: 708px;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+  
 }
-.container-perfil {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.container-content  {
     max-width: 1080px;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    padding: 0 50px;
 }
-
-.container-about .descriptionContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-about .descriptionContainer .description{
-    width: 100%;
-    max-width: 1080px;
+.description{
+    padding: 30px;
     font-weight: 400;
     color: #ffffff;
     font-size: 25px;
-
+    text-align: justify;   
 }
 
-.container-perfil .textDiv{
-    text-align: end;
-}
-
-.container-perfil .imgContainer{
-    margin-right: 100px;
-}
-
-.container-perfil .textDiv .title{
+.title{
     font-size: 64px;
     color: #FCF8F8
 }
 
-.container-perfil .textDiv .subtitle{
+.subtitle{
     font-size: 36px;
     color: #AAAAAA
 }
-
+.perfil {
+    display: flex;
+    justify-content: center;
+}
 
 

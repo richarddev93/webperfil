@@ -2,7 +2,7 @@
 .container-service  {
     display: flex;
     width: 100%;
-    max-width: 1020px;
+    max-width: 1080px;
     justify-content: center;
     padding-left: 20px 30px;
     flex-direction: column;

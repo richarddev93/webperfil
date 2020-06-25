@@ -1,6 +1,6 @@
 import React from 'react';
 import './global.css'
-import NavBar from './components/Navbar'
+import Navbar2 from './components/NavBot'
 import About from './pages/About'
 import Experience from './pages/Experience'
 import Education from './pages/Education'
@@ -13,7 +13,7 @@ function App() {
   return (
 
     <div>
-      <NavBar/>
+      <Navbar2/>
       <About title ="Home" id="about"/>
       <Experience id ="experience"/>
       <Education id ="education"/>

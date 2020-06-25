@@ -11,7 +11,6 @@ export default function Index({title,id}) {
 
   async function handleMessage (e){
     e.preventDefault();
-    alert("Mensagem Enviada")
 
     const data = { name,
     email,
