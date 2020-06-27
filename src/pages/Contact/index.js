@@ -91,7 +91,7 @@ export default function Index({title,id}) {
                   color:'#ffffff',
                   border:'1px solid  #50fa7b',
                   borderRadius:5,
-                  boxShadow : '0 1px 3px 0 #ffffff'
+                  boxShadow : '0 1px 3px 0 #f8f8f8'
                 }} 
                 >
                 <Toast.Header className="toast-style-header">
