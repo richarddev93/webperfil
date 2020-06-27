@@ -44,34 +44,14 @@
 .container-contact h1 {
     color:#f8f8f8;
 } 
-.container-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 5px;
-}
-.container-input-group {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    flex-direction: column;
-    margin-right: 10px;
-}
-.container-input-group section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3px;
-}
-.container-input-group section span {
-    color: bisque;
+
+.section-style span {
+    color: #f8f8f8;
     margin-bottom: 5px;
     margin-left: 2px;
     font-size: 18px;
 }
-.form-control {
-    flex: 1;
-}
+
 
 .section-textarea {
     display: flex;
@@ -89,11 +69,6 @@
 .container-contact-social-media {
     display: flex;
     flex-direction: row;
-}
-.container-contact-data {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .toast-style-header {

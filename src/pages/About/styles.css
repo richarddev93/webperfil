@@ -7,7 +7,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-height: 708px;
+    min-height: 809px;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -15,6 +15,7 @@
 }
 .container-content  {
     max-width: 1080px;
+    margin-top: 50px;
 }
 .description{
     padding: 30px;

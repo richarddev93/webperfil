@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import {  Link,animateScroll as scroll } from "react-scroll";
+import React from "react";
+import {  Link } from "react-scroll";
 import './styles.css'
 
 import Container from 'react-bootstrap/Container'
@@ -9,9 +9,7 @@ import Card from 'react-bootstrap/Card';
 
 function index() {
 
-  const  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+
   return (
     <Row className="footer-container">
       <Container>

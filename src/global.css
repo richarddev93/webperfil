@@ -44,13 +44,13 @@ form input {
     border: 0;
     font-weight: 700;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     line-height: 30px;
     transition: filter 0.2s;
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 .button:hover {

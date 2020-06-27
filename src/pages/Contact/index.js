@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import { GrLinkedin,GrGithub,} from "react-icons/gr";
 import { RiMailSendLine } from "react-icons/ri";
 import Form from 'react-bootstrap/Form'
-
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
 import Toast from 'react-bootstrap/Toast'
 import api from '../../services/api'
 
@@ -71,7 +72,7 @@ export default function Index({title,id}) {
   }
   
   return (
-     <div className="container-contact" id ={id}>
+     <Container className="container-contact" id ={id}>
         <div>
             <h1>Fale Comigo</h1>
             {showA ?
@@ -116,51 +117,58 @@ export default function Index({title,id}) {
         </section>
 
         
-        <Form className = "form">
-            <form onSubmit={handleMessage}> 
-                <div className="container-input">
-                    <div className = "container-input-group"> 
-                      <section >
-                        <span >Nome</span>
-                        <input  
-                          value={name}
-                          onChange={(e)=>{setName(e.target.value)}}
-                         aria-describedby="emailHelp" placeholder="Digite o nome" />
-                      </section>
+        <Form className = "form" onSubmit={handleMessage}>
+          <Form.Row>
+            <Form.Group as={Col} md="6" >
+              <Form.Group as={Col} >
+                 <section className="section-style" >
+                    <span >Nome</span>
+                    <input  
+                      value={name}
+                      onChange={(e)=>{setName(e.target.value)}}
+                      aria-describedby="emailHelp" placeholder="Digite o nome" />
+                  </section>
+              </Form.Group>
 
-                      <section >
-                        <span >E-mail</span>
-                        <input 
-                          value={email}
-                          onChange={(e)=>{setEmail(e.target.value)}}
-                          type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entre com o e-mail" />
-                      </section>
+              <Form.Group as={Col}  >
+                <section className="section-style" >
+                  <span >E-mail</span>
+                  <input 
+                    value={email}
+                    onChange={(e)=>{setEmail(e.target.value)}}
+                    type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entre com o e-mail" />
+                </section>
+              </Form.Group>
 
-                      <section >
-                        <span >Assunto</span>
-                        <select 
-                            value={subject}
-                            onChange={(e)=>{setSubject  (e.target.value)}}
-                         >
-                          {subjects.map( (i) => (
-                            <option value={i.value}>{i.label}</option>
-                          ))}
-                        </select>
-                      </section>
+              <Form.Group as={Col}  >
+                <section className="section-style" >
+                  <span >Assunto</span>
+                  <select 
+                      value={subject}
+                      onChange={(e)=>{setSubject  (e.target.value)}}
+                    >
+                    {subjects.map( (i,index) => (
+                      <option key ={index} value={i.value}>{i.label}</option>
+                    ))}
+                  </select>
+                </section>
+              </Form.Group>
+            </Form.Group>
 
-                    </div>   
-
-                      <section className="section-textarea">
-                        <span >Mensagem</span>
-                        <textarea 
-                          value={message}
-                          onChange={(e)=>{setMessage(e.target.value)}}
-                          placeholder="Digite a mensagem"></textarea>                   
-                      </section>          
-                </div>                       
-                <button className ="button" type="submit">Enviar</button>
-            </form>
+            <Form.Group as={Col} md="6" >
+              <section className="section-textarea">
+                <span >Mensagem</span>
+                <textarea 
+                  value={message}
+                  onChange={(e)=>{setMessage(e.target.value)}}
+                  placeholder="Digite a mensagem"></textarea>                   
+              </section>  
+            </Form.Group>
+          </Form.Row>            
+          <button className ="button" type="submit">Enviar</button>   
         </Form>
-    </div>
+    </Container>
   )
 }
+
+
