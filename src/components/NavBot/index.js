@@ -10,7 +10,7 @@ const index = () => {
 
    const  scrollToTop = () => {
         scroll.scrollToTop();
-      };
+   };
 
     return (
         

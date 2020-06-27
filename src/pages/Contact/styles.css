@@ -38,6 +38,7 @@
     max-width: 1020px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .container-contact h1 {
@@ -93,6 +94,16 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+.toast-style-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #44475A;
+
+}
+.toast-style-body {
+    padding: 5px;
 }
 
 

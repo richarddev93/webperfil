@@ -1,42 +1,17 @@
 import React, {useState} from 'react'
-import { GrLinkedin,GrGithub } from "react-icons/gr";
+import { GrLinkedin,GrGithub,} from "react-icons/gr";
+import { RiMailSendLine } from "react-icons/ri";
+import Form from 'react-bootstrap/Form'
+
+import Toast from 'react-bootstrap/Toast'
 import api from '../../services/api'
 
 import './styles.css'
 
-
-
-
 export default function Index({title,id}) {
 
-  async function handleMessage (e){
-    e.preventDefault();
+  const [showA, setShowA] = useState(false);
 
-    const data = { name,
-    email,
-    subject,
-    message};
-
-    try {
-      const response = await api.post('api2/send',data);
-
-      if(response.data.send === "success"){
-        alert("Mensagem enviada com sucesso !");
-        setName('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
-
-      }else {
-        alert("Erro ao enviar a mensagem,tente novamente !");
-        console.log(response);
-      }
-      
-    } catch (error) {
-      alert("Erro ao enviar a mensagem,tente novamente !");
-      console.log(error);
-    }
-  }
   const [name,setName]= useState('')
   const [email,setEmail]= useState('')
   const [subject,setSubject]= useState('')
@@ -66,11 +41,66 @@ export default function Index({title,id}) {
     },
   ];
 
-  
-    return (
-    <div className="container-contact" id ={id}>
-            <h1>Fale Comigo.</h1>
+  async function handleMessage (e){
+    e.preventDefault();
 
+    const data = { name,
+    email,
+    subject,
+    message};
+
+    try {
+      const response = await api.post('api2/send',data);
+
+      if(response.data.send === "success"){
+        setShowA(true)
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+
+      }else {
+        alert("Erro ao enviar a mensagem,tente novamente !");
+        console.log(response);
+      }
+      
+    } catch (error) {
+      alert("Erro ao enviar a mensagem,tente novamente !");
+      console.log(error);
+    }
+  }
+  
+  return (
+     <div className="container-contact" id ={id}>
+        <div>
+            <h1>Fale Comigo</h1>
+            {showA ?
+              <Toast 
+                onClose={() => setShowA(false)} 
+                show={showA} 
+                delay={3000} 
+                autohide
+                style={{
+                  position:"absolute",
+                  right:5,
+                  display:'flex',
+                  flexDirection:'column',
+                  padding:8,
+                  width:250,
+                  color:'#ffffff',
+                  border:'1px solid  #50fa7b',
+                  borderRadius:5,
+                  boxShadow : '0 1px 3px 0 #ffffff'
+                }} 
+                >
+                <Toast.Header className="toast-style-header">
+                  <RiMailSendLine style={{'marginRight':'10'}}/>
+                  <strong className="mr-auto">Mensagem</strong>
+                  <small>agora ...</small>
+                </Toast.Header>
+                <Toast.Body className="toast-style-body">Enviada com Sucesso !</Toast.Body>
+              </Toast>:null }
+        </div>    
         <section >
           <span>
             <h4>Telefone :</h4> <p> 11 98174-3885</p>
@@ -85,7 +115,8 @@ export default function Index({title,id}) {
           </div>
         </section>
 
-        <div className = "form">
+        
+        <Form className = "form">
             <form onSubmit={handleMessage}> 
                 <div className="container-input">
                     <div className = "container-input-group"> 
@@ -129,9 +160,7 @@ export default function Index({title,id}) {
                 </div>                       
                 <button className ="button" type="submit">Enviar</button>
             </form>
-        </div>
+        </Form>
     </div>
-
-
-    )
+  )
 }
