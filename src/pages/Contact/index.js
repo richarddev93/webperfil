@@ -67,7 +67,7 @@ export default function Index({title,id}) {
       
     } catch (error) {
       alert("Erro ao enviar a mensagem,tente novamente !");
-      console.log(error);
+      console.log(error.message);
     }
   }
   
