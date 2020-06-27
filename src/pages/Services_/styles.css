@@ -29,10 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-}
-.container-detail-service div + div {
-    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .container-detail-service  h3{
@@ -82,7 +79,7 @@
 
 .container-framework {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1080px;
     align-content: center;
