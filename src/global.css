@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Roboto:wght@300;400;500;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Roboto:wght@300;400;500;900&display=swap'); */
 
 *{
     margin:0;
@@ -15,7 +15,7 @@ body {
 }
 
 input,button,textarea,option {
-    font: 400 18px Flamenco,sans-serif;
+    font: 400 18px Roboto,sans-serif;
 }
 
 button {
