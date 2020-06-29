@@ -14,7 +14,7 @@ export default function index({id}) {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contenttyle={ { background: '#f8f8f8', color: '#44475a', borderTop: ' 3px solid #50FA7B' }}
+                    contentStyle={ { background: '#f8f8f8', color: '#44475a', borderTop: ' 3px solid #50FA7B' }}
                     contentArrowStyle={{ borderRight: '5px solid  #50FA7B' }}
                     date="2019 - Atual"
                     iconStyle={{ background: '#282a36', color: '#50FA7B' }}
