@@ -25,9 +25,7 @@ form input {
     max-width: 100%;
     height: 40px;
     background-color: #282A36;
-    border-color: #44475A;
-    border :1 ;
-    border-style: solid solid solid solid;
+    border :2px solid  #44475A;
     padding: 10px;
     color: #f8f8f8;
     margin-bottom: 10px;
