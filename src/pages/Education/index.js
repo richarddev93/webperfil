@@ -10,7 +10,7 @@ export default function index({id}) {
             <section>
                 <div className="title-group">
                     <h2> - Sistemas de Informação</h2>
-                    <p> • Nível Nuperior</p>
+                    <p> • Nível Superior</p>
                 </div>
                 <div className="title-group">
 
