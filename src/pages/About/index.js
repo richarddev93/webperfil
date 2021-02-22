@@ -14,7 +14,6 @@ export default function index({id}) {
                     <Col className="text-right">
                         <p className = "title">Richard Machado</p>
                         <p className = "subtitle">Desenvolvedor FullStack</p>
-                        <p className = "subtitle">27 anos</p>
                     </Col>
                     <Col className="perfil">    
                         <img className = "rounded" src = {Avatar} alt = "" height="200px"/>
